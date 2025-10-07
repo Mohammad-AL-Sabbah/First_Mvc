@@ -1,0 +1,16 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+
+    @{
+        foreach(var item in Model)
+        {
+            <li>Name is :@item.Name <a href="/Categories/Details/@item.Id">Details</a></li>
+        }
+    }
+</body>
+</html>
